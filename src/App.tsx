@@ -1,12 +1,14 @@
 import React from 'react';
+import { Header } from './features/header/Header';
+import { Payment } from './features/payment/Payment';
 
-function App() {
-  fetch(
-    'https://reststop.randomhouse.com/resources/titles?keyword=Grisham%20Christmas'
-  )
-    .then((res) => res.json())
-    .then((json) => console.log(json));
-  return <div className="App"></div>;
+function App(): JSX.Element {
+  return (
+    <div className="App">
+      <Header />
+      <Payment />
+    </div>
+  );
 }
 
 export default App;
