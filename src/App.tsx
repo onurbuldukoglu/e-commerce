@@ -1,12 +1,12 @@
 import React from 'react';
+import { Header } from './features/header/Header';
 
 function App() {
-  fetch(
-    'https://reststop.randomhouse.com/resources/titles?keyword=Grisham%20Christmas'
-  )
-    .then((res) => res.json())
-    .then((json) => console.log(json));
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <Header />
+    </div>
+  );
 }
 
 export default App;
