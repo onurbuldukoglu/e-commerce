@@ -2,7 +2,7 @@ export const Cart = (): JSX.Element => {
   return (
     <div className="flex flex-col items-end">
       <h1>Sepet/180₺</h1>
-      <div className="bg-white w-52 absolute top-32 border-gray-200 border-solid border shadow-md rounded-md flex flex-col justify-center items-center divide-y">
+      <div className="bg-white w-56 absolute top-36 border-gray-200 border-solid border shadow-md rounded-md flex flex-col justify-center items-center divide-y">
         <div>
           <div className="w-full p-4 flex justify-between items-center">
             <img alt="thumbnail"></img>
@@ -34,10 +34,10 @@ export const Cart = (): JSX.Element => {
           <p className="py-4 font-bold">Ara toplam: 180₺</p>
         </div>
         <div className="flex flex-col items-center justify-between w-full py-4">
-          <button className="border border-gray-200 w-32 rounded-md mb-2 h-8  px-2 hover:bg-gray-200">
+          <button className="border bg-orange-300 hover:bg-black hover:text-gray-200 w-32 rounded-full mb-2 h-8  px-2">
             Sepeti Görüntüle
           </button>
-          <button className="border border-gray-200 w-32 rounded-md h-8 px-2 hover:bg-gray-200">
+          <button className="border bg-orange-300 hover:bg-black hover:text-gray-200 w-32 rounded-full h-8 px-2 ">
             Ödeme
           </button>
         </div>
