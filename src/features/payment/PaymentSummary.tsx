@@ -2,7 +2,7 @@ export const PaymentSummary = (): JSX.Element => {
   return (
     <div>
       <h1 className="text-2xl mb-8">Siparişiniz</h1>
-      <div className="border border-gray-200 rounded-sm w-96 p-8">
+      <div className="border border-gray-300 rounded-sm w-96 p-8">
         <table className="text-bold w-full font-bold mt-4">
           <thead>
             <tr className="border-y-2">
@@ -45,7 +45,7 @@ export const PaymentSummary = (): JSX.Element => {
               name={'payment-method'}
               className="m-2"
             />
-            <label htmlFor="payment-card">Kredi Kartı ile</label>
+            <label htmlFor="payment-card">Kredi Kartı ile Öde</label>
           </div>
           <div>
             <input
@@ -54,13 +54,16 @@ export const PaymentSummary = (): JSX.Element => {
               name={'payment-method'}
               className="m-2"
             />
-            <label htmlFor="payment-card">Havale ile</label>
+            <label htmlFor="payment-card">Havale ile Öde</label>
           </div>
         </div>
         <input type={'checkbox'} id={'terms-and-conditions'} className="m-2" />
         <label htmlFor="terms-and-conditions">
           Şartlar ve koşulları okudum ve kabul ediyorum.
         </label>
+        <button className="bg-orange-300 hover:bg-black hover:text-gray-200 rounded-full border w-full h-10 mt-6">
+          Siparişi Onayla
+        </button>
       </div>
     </div>
   );

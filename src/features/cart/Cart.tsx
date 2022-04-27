@@ -2,7 +2,7 @@ export const Cart = (): JSX.Element => {
   return (
     <div className="flex flex-col items-end">
       <h1>Sepet/180₺</h1>
-      <div className="hidden w-52 absolute top-32 border-gray-200 border-solid border shadow-md rounded-md flex flex-col justify-center items-center divide-y">
+      <div className="bg-white w-52 absolute top-32 border-gray-200 border-solid border shadow-md rounded-md flex flex-col justify-center items-center divide-y">
         <div>
           <div className="w-full p-4 flex justify-between items-center">
             <img alt="thumbnail"></img>
